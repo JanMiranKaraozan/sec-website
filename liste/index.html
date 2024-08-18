@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otonom Araç Bileşen Listesi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 180vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 1000px;
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #dddddd;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+        td:last-child {
+            text-align: center;
+        }
+        .status {
+            font-weight: bold;
+            color: #FF0000;
+        }
+        .status2 {
+            font-weight: bold;
+            color: #15ce1e;
+        }
+        .logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .logo img {
+            max-width: 150px;
+        }
+        .back-button {
+            display: block;
+            text-align: center;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+        .completed-by {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .completed-by img {
+            max-width: 50px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <!-- Buraya logo eklemek için img etiketi kullanabilirsiniz -->
+          <a href="https://www.secmotors.com.tr/">
+            <img src="logo.jpeg" alt="Logo">
+          </a>  
+        </div>
+        <h1>Otonom Araç Bileşen Listesi</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Bileşen</th>
+                    <th>Adet</th>
+                    <th>Tahmini Maliyet (TL)</th>
+                    <th>Durum</th>
+                    <th>Tarafından Tamamlandı</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Şasi</td>
+                    <td>1</td>
+                    <td>50.000 TL</td>
+                    <td class="status2">Tamamlandı</td>
+                    <td class="completed-by">İkitelli Sanayi</td>
+                </tr>
+                <tr>
+                    <td>Gövde Panelleri</td>
+                    <td>8-10</td>
+                    <td>100.000 TL</td>
+                    <td class="status">Tamamlanmadı</td>
+                    <td class="completed-by">-</td>
+                </tr>
+                <tr>
+                    <td>Elektrikli Motor</td>
+                    <td>1</td>
+                    <td>200.000 TL</td>
+                    <td class="status">Tamamlanmadı</td>
+                    <td class="completed-by">-</td>
+                </tr>
+                <tr>
+                    <td>Batarya Paketi</td>
+                    <td>1</td>
+                    <td>300.000 TL</td>
+                    <td class="status">Tamamlanmadı</td>
+                    <td class="completed-by">-</td>
+                </tr>
+                <tr>
+                    <td>Lidar Sensörler</td>
+                    <td>4-6</td>
+                    <td>200.000 TL</td>
+                    <td class="status">Tamamlanmadı</td>
+                    <td class="completed-by">-</td>
+                </tr>
+                <tr>
+                    <td>Kamera Sistemi</td>
+                    <td>6-8</td>
+                    <td>80.000 TL</td>
+                    <td class="status">Tamamlanmadı</td>
+                    <td class="completed-by">-</td>
+                </tr>
+                <tr>
+                    <td>Radar Sensörler</td>
+                    <td>4-6</td>
+                    <td>50.000 TL</td>
+                    <td class="status">Tamamlanmadı</td>
+                    <td class="completed-by">-</td>
+                </tr>
+                <tr>
+                    <td>Otonom Yazılım ve İşlemciler</td>
+                    <td>1 sistem</td>
+                    <td>500.000 TL</td>
+                    <td class="status">Tamamlanmadı</td>
+                    <td class="completed-by">-</td>
+                </tr>
+                <tr>
+                    <td>Koltuklar</td>
+                    <td>4</td>
+                    <td>40.000 TL</td>
+                    <td class="status">Tamamlanmadı</td>
+                    <td class="completed-by">-</td>
+                </tr>
+                <tr>
+                    <td>Gösterge Paneli ve Kontroller</td>
+                    <td>1 set</td>
+                    <td>60.000 TL</td>
+                    <td class="status">Tamamlanmadı</td>
+                    <td class="completed-by">-</td>
+                </tr>
+                <tr>
+                    <td>Klima ve Isıtma Sistemi</td>
+                    <td>1</td>
+                    <td>30.000 TL</td>
+                    <td class="status">Tamamlanmadı</td>
+                    <td class="completed-by">-</td>
+                </tr>
+                <tr>
+                    <td>Ses Sistemi</td>
+                    <td>1 set</td>
+                    <td>20.000 TL</td>
+                    <td class="status">Tamamlanmadı</td>
+                    <td class="completed-by">-</td>
+                </tr>
+                <tr>
+                    <td>Döşeme ve İç Kaplama</td>
+                    <td>-</td>
+                    <td>30.000 TL</td>
+                    <td class="status">Tamamlanmadı</td>
+                    <td class="completed-by">-</td>
+                </tr>
+                <tr>
+                    <td>Farlar ve Aydınlatma Sistemi</td>
+                    <td>1 set</td>
+                    <td>20.000 TL</td>
+                    <td class="status">Tamamlanmadı</td>
+                    <td class="completed-by">-</td>
+                </tr>
+                <tr>
+                    <td>Yan Aynalar ve Kameralar</td>
+                    <td>2</td>
+                    <td>10.000 TL</td>
+                    <td class="status">Tamamlanmadı</td>
+                    <td class="completed-by">-</td>
+                </tr>
+                <tr>
+                    <td>Lastikler ve Jantlar</td>
+                    <td>4</td>
+                    <td>40.000 TL</td>
+                    <td class="status">Tamamlanmadı</td>
+                    <td class="completed-by">-</td>
+                </tr>
+                <tr>
+                    <td>Araç Kontrol Ünitesi (ECU)</td>
+                    <td>1</td>
+                    <td>100.000 TL</td>
+                    <td class="status">Tamamlanmadı</td>
+                    <td class="completed-by">-</td>
+                </tr>
+                <tr>
+                    <td>Kablolama ve Devre Kartları</td>
+                    <td>1 set</td>
+                    <td>20.000 TL</td>
+                    <td class="status">Tamamlanmadı</td>
+                    <td class="completed-by">-</td>
+                </tr>
+                <tr>
+                    <td>Güç Dağıtım Ünitesi</td>
+                    <td>1</td>
+                    <td>10.000 TL</td>
+                    <td class="status">Tamamlanmadı</td>
+                    <td class="completed-by">-</td>
+                </tr>
+                <tr>
+                    <td>Süspansiyon ve Fren Sistemi</td>
+                    <td>1 set</td>
+                    <td>80.000 TL</td>
+                    <td class="status">Tamamlanmadı</td>
+                    <td class="completed-by">-</td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="#" class="back-button">Geri Dön</a>
+    </div>
+</body>
+</html>
